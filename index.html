@@ -9,16 +9,25 @@
         font-color: black;
     }
 
-    .hi {
-        font-size: 4em;
+    a {
+        text-decoration: none;
+    }
+
+    a:hover span.hi::before {
+        content: "😄";
+    }
+
+    span.hi::before {
+        font-size: 6em;
+        display: block;
+        content: "🥸B";
     }
 </style>
-    
+
 </head>
 <body>
     <b>
-        <span class="hi">🥸</span>,
-        <a href="https://www.linkedin.com/in/jornpeters/">click here for more</a>
+        <a href="https://www.linkedin.com/in/jornpeters/"><span class="hi"></span></a>
     </b>
 </body>
 </html>
